@@ -7,7 +7,7 @@ values:
     value: ''
     enabled: true
   - key: baseUrl
-    value: 'https://PREENCHER-HML'
+    value: https://api-hml.gearsales.com.br
     enabled: true
   - key: brandId
     value: ''
