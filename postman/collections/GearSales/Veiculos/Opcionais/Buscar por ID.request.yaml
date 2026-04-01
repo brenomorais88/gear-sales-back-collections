@@ -1,9 +1,9 @@
 $kind: http-request
 description: >
-  Generated from cURL: curl -X GET http://localhost:8080/opcionais/UUID_OPCIONAL
+  Generated from cURL: curl -X GET {{baseUrl}}/opcionais/UUID_OPCIONAL
   \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI"
-url: "{{baseUrl}}opcionais/3677ff1e-c7b6-4ec3-9d41-e312f02963f2"
+    -H "Authorization: Bearer {{accessToken}}"
+url: "{{baseUrl}}/opcionais/{{opcionalId}}"
 method: GET
 headers:
   Authorization: Bearer {{accessToken}}

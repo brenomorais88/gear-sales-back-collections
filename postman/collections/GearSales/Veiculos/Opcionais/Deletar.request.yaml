@@ -1,9 +1,9 @@
 $kind: http-request
 description: >
   Generated from cURL: curl -X DELETE
-  http://localhost:8080/opcionais/UUID_OPCIONAL \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI"
-url: "{{baseUrl}}opcionais/UUID_OPCIONAL"
+  {{baseUrl}}/opcionais/UUID_OPCIONAL \
+    -H "Authorization: Bearer {{accessToken}}"
+url: "{{baseUrl}}/opcionais/{{opcionalId}}"
 method: DELETE
 headers:
   Authorization: Bearer {{accessToken}}

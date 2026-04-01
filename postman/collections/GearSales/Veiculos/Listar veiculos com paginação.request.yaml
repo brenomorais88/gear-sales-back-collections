@@ -1,8 +1,8 @@
 $kind: http-request
 description: >
   Generated from cURL: curl --location
-  'http://localhost:8080/veiculos?page=2&size=5'
-url: "{{baseUrl}}veiculos?page=1&size=5"
+  '{{baseUrl}}/veiculos?page=2&size=5'
+url: "{{baseUrl}}/veiculos?page=1&size=5"
 method: GET
 queryParams:
   page: "1"

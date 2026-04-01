@@ -1,10 +1,10 @@
 $kind: http-request
 description: |-
   Generated from cURL: curl --location '{{baseUrl}}/billing/customer-portal' \
-  --header 'Authorization: Bearer {{jwtToken}}' \
+  --header 'Authorization: Bearer {{accessToken}}' \
   --header 'Content-Type: application/json' \
   --data '{
-    "lojaId": "1eefa3f1-cb96-4b26-8db5-9ee691fbfa06"
+    "lojaId": "{{lojaId}}"
   }'
 url: "{{baseUrl}}/billing/customer-portal"
 method: POST
@@ -15,6 +15,6 @@ body:
   type: json
   content: |-
     {
-      "lojaId": "9852e737-f6ea-4cab-9c29-42a017358f80"
+      "lojaId": "{{lojaId}}"
     }
 order: 4000

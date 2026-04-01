@@ -1,6 +1,6 @@
 $kind: http-request
 description: |
-  Generated from cURL: curl -X GET http://localhost:8080/modelos
-url: http://localhost:8080/modelos
+  Generated from cURL: curl -X GET {{baseUrl}}/modelos
+url: "{{baseUrl}}/modelos"
 method: GET
 order: 2000

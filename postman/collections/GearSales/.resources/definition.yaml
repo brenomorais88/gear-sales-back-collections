@@ -36,26 +36,44 @@ description: >-
   environment):
 
 
-  - `baseUrl` - Base URL of the API (e.g., http://localhost:8080)
+  - `baseUrl` - Base URL of the API (no trailing slash; e.g. `http://localhost:8080`)
 
-  - `accessToken` - JWT access token for authentication (auto-set after login)
+  - `accessToken` - JWT access token (auto-set after login/register)
 
-  - `refreshToken` - Token for refreshing expired access tokens
+  - `refreshToken` - Refresh token (auto-set after login)
 
   - `userId` - Current user ID
 
-  - `categoriaId` - Category ID for testing
+  - `userNome`, `userSobrenome`, `userDocumento`, `userDataNascimento`, `userSenha` - Dados para cadastro/login (preencha localmente; não versionar segredos)
 
-  - `vendaId` - Sale ID for testing
+  - `lojaId` - ID da loja em rotas `/lojas/{id}/...`
 
-  - `anuncioId` - Announcement ID for testing
+  - `storeId` - Reservado para contextos em inglês / integrações (opcional; a API usa `lojaId` nas rotas principais)
+
+  - `leadId`, `noteId`, `vehicleId`, `teamMemberId` - IDs para leads, notas, veículos e membros
+
+  - `categoryId` - Categoria (scripts de teste gravam após POST)
+
+  - `saleId` - Venda (script grava após criar venda)
+
+  - `brandId`, `modelId`, `tipoVeiculoId`, `opcionalId` - Catálogo (marcas, modelos, tipos, opcionais)
+
+  - `anuncioId`, `imageId` - Anúncio e imagem
+
+  - `subscriptionId`, `customerId` - Cobrança / Stripe quando aplicável
+
+  - `cloudflare_uploadUrl`, `cloudflare_finalUrl`, `cloudflare_uploadPath` - Upload de imagens (scripts)
+
+  - `stripeSessionId` - Sessão Stripe quando aplicável
 
 
   ### Available Environments
 
-  - **App Serviços - Local**: For local development (localhost:8080)
+  - **App Serviços - Local**: `http://localhost:8080`
 
-  - **App Serviços - HML**: For homologation/staging environment
+  - **App Serviços - HML**: preencha `baseUrl` (ex.: `https://PREENCHER-HML`)
+
+  - **App Serviços - PROD**: preencha `baseUrl` (ex.: `https://PREENCHER-PROD`)
 
 
   ## API Structure
@@ -169,5 +187,5 @@ description: >-
 
   *Coleção completa para testar Autenticação, Usuário (/me) e Categorias.*
 variables:
-  baseUrl: http://localhost:8080
-  categoriaId: ""
+  baseUrl: ""
+  categoryId: ""

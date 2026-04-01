@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}"
+url: "{{baseUrl}}/lojas/{{lojaId}}/leads/{{leadId}}"
 method: PUT
 headers:
   Content-Type: application/json
@@ -14,7 +14,7 @@ body:
       "origem": "INSTAGRAM",
       "veiculoId": null,
       "veiculoTexto": "Honda Civic 2020",
-      "responsavelUserId": "{{USER_ID}}",
+      "responsavelUserId": "{{userId}}",
       "perdidoMotivo": null
     }
 order: 3000

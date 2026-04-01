@@ -1,10 +1,10 @@
 $kind: http-request
 description: |
   Generated from cURL: curl --request POST \
-    --url http://localhost:8080/auth/refresh \
+    --url {{baseUrl}}/auth/refresh \
     --header 'Content-Type: application/json' \
     --header 'Accept: application/json' \
-    --cookie "access=SEU_ACCESS_TOKEN_ATUAL" \
+    --cookie "access={{accessToken}}" \
     --data '{
       "refreshToken": "SEU_REFRESH_TOKEN_AQUI"
     }'
@@ -13,11 +13,11 @@ method: POST
 headers:
   Content-Type: application/json
   Accept: application/json
-  Cookie: access=SEU_ACCESS_TOKEN_ATUAL
+  Cookie: access={{accessToken}}
 body:
   type: json
   content: |-
     {
-        "refreshToken": {{refreshToken}}
+        "refreshToken": "{{refreshToken}}"
       }
 order: 3000

@@ -1,7 +1,5 @@
 $kind: http-request
-url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads?search=pedro&status=NOVO&origem=WHAT\
-  SAPP&followUp=ATRASADO&onlyMine=true&page=1&pageSize=20&sortBy=OPERATIONAL&so\
-  rtDescending=true"
+url: "{{baseUrl}}/lojas/{{lojaId}}/leads?search=pedro&status=NOVO&origem=WHATSAPP&followUp=ATRASADO&onlyMine=true&page=1&pageSize=20&sortBy=OPERATIONAL&sortDescending=true"
 method: GET
 headers:
   Accept: application/json

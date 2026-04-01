@@ -1,6 +1,6 @@
 $kind: http-request
 name: DELETE /categorias/:id (Delete)
-url: "{{baseUrl}}/categorias/{{categoriaId}}"
+url: "{{baseUrl}}/categorias/{{categoryId}}"
 method: DELETE
 scripts:
   - type: afterResponse
@@ -8,6 +8,6 @@ scripts:
       pm.test('204/200', function(){
       pm.expect([200,204]).to.include(pm.response.code); });
 
-      pm.environment.unset('categoriaId');
+      pm.environment.unset('categoryId');
     language: text/javascript
 order: 5000

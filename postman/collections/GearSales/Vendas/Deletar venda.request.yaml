@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{baseUrl}}/vendas/{{vendaId}}"
+url: "{{baseUrl}}/vendas/{{saleId}}"
 method: DELETE
 order: 6000

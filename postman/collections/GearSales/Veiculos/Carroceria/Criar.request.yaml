@@ -1,12 +1,12 @@
 $kind: http-request
 description: |
-  Generated from cURL: curl -X POST http://localhost:8080/cambios \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  Generated from cURL: curl -X POST {{baseUrl}}/cambios \
+    -H "Authorization: Bearer {{accessToken}}" \
     -H "Content-Type: application/json" \
     -d '{
       "nome": "Automático"
     }'
-url: "{{baseUrl}}carrocerias"
+url: "{{baseUrl}}/carrocerias"
 method: POST
 headers:
   Authorization: Bearer {{accessToken}}

@@ -11,7 +11,7 @@ body:
       "valorCompra": "35000.00",
       "valorVenda": "39990.00",
       "status": "DISPONIVEL",
-      "veiculoId": "32718541-fd71-4b53-9afa-5ea0d8ccca27",
-      "lojaId": "7332695e-e9f8-47a7-bac4-d7a01ec10577"
+      "veiculoId": "{{vehicleId}}",
+      "lojaId": "{{lojaId}}"
     }
 order: 1000

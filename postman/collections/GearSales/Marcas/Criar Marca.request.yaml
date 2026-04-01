@@ -1,12 +1,12 @@
 $kind: http-request
 description: |
-  Generated from cURL: curl -X POST http://localhost:8080/marcas \
+  Generated from cURL: curl -X POST {{baseUrl}}/marcas \
     -H "Content-Type: application/json" \
     -d '{
       "nome": "Ford",
       "tipo": "CARRO"
     }'
-url: http://localhost:8080/marcas
+url: "{{baseUrl}}/marcas"
 method: POST
 headers:
   Content-Type: application/json

@@ -1,11 +1,11 @@
 $kind: http-request
 description: |-
-  Generated from cURL: curl -X POST http://localhost:8080/auth/password/forgot \
+  Generated from cURL: curl -X POST {{baseUrl}}/auth/password/forgot \
     -H "Content-Type: application/json" \
     -d '{
       "identifier": "12345678900"
   }'
-url: http://localhost:8080/auth/password/forgot
+url: "{{baseUrl}}/auth/password/forgot"
 method: POST
 headers:
   Content-Type: application/json

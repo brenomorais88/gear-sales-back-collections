@@ -1,14 +1,14 @@
 $kind: http-request
 description: >
-  Generated from cURL: curl -X PUT http://localhost:8080/opcionais/UUID_OPCIONAL
+  Generated from cURL: curl -X PUT {{baseUrl}}/opcionais/UUID_OPCIONAL
   \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+    -H "Authorization: Bearer {{accessToken}}" \
     -H "Content-Type: application/json" \
     -d '{
       "nome": "Vidro Elétrico",
-      "tipoVeiculoId": "0c8e71d1-93a7-4a88-b8b5-1dfbb3f9b4c2"
+      "tipoVeiculoId": "{{tipoVeiculoId}}"
     }'
-url: "{{baseUrl}}opcionais/UUID_OPCIONAL"
+url: "{{baseUrl}}/opcionais/{{opcionalId}}"
 method: PUT
 headers:
   Authorization: Bearer {{accessToken}}
@@ -18,6 +18,6 @@ body:
   content: |-
     {
         "nome": "Vidro Elétrico",
-        "tipoVeiculoId": "0c8e71d1-93a7-4a88-b8b5-1dfbb3f9b4c2"
+        "tipoVeiculoId": "{{tipoVeiculoId}}"
       }
 order: 6000

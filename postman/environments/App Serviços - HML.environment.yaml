@@ -1,54 +1,18 @@
 name: App Serviços - HML
 values:
-  - key: baseUrl
-    value: http://api-hml.gearsales.com.br
-    enabled: true
   - key: accessToken
     value: ""
     enabled: true
-  - key: userId
+  - key: anuncioId
     value: ""
     enabled: true
-  - key: userNome
-    value: Breno
+  - key: baseUrl
+    value: https://PREENCHER-HML
     enabled: true
-  - key: userSobrenome
-    value: Morais
-    enabled: true
-  - key: userDocumento
-    value: "12345678900"
-    enabled: true
-  - key: userDataNascimento
-    value: 1997-08-12
-    enabled: true
-  - key: userSenha
-    value: S3nh@Forte!
-    enabled: true
-  - key: categoriaId
+  - key: brandId
     value: ""
     enabled: true
-  - key: vendaId
-    value: ""
-    enabled: true
-  - key: uploadUrl
-    value: ""
-    enabled: true
-  - key: finalUrl
-    value: ""
-    enabled: true
-  - key: uploadPath
-    value: ""
-    enabled: true
-  - key: cloudfare_uploadUrl
-    value: ""
-    enabled: true
-  - key: cloudfare_finalUrl
-    value: ""
-    enabled: true
-  - key: cloudfare_uploadPath
-    value: ""
-    enabled: true
-  - key: cloudflare_uploadUrl
+  - key: categoryId
     value: ""
     enabled: true
   - key: cloudflare_finalUrl
@@ -57,7 +21,70 @@ values:
   - key: cloudflare_uploadPath
     value: ""
     enabled: true
+  - key: cloudflare_uploadUrl
+    value: ""
+    enabled: true
+  - key: customerId
+    value: ""
+    enabled: true
+  - key: imageId
+    value: ""
+    enabled: true
+  - key: leadId
+    value: ""
+    enabled: true
+  - key: lojaId
+    value: ""
+    enabled: true
+  - key: modelId
+    value: ""
+    enabled: true
+  - key: noteId
+    value: ""
+    enabled: true
+  - key: opcionalId
+    value: ""
+    enabled: true
   - key: refreshToken
+    value: ""
+    enabled: true
+  - key: saleId
+    value: ""
+    enabled: true
+  - key: storeId
+    value: ""
+    enabled: true
+  - key: stripeSessionId
+    value: ""
+    enabled: true
+  - key: subscriptionId
+    value: ""
+    enabled: true
+  - key: teamMemberId
+    value: ""
+    enabled: true
+  - key: tipoVeiculoId
+    value: ""
+    enabled: true
+  - key: userDataNascimento
+    value: ""
+    enabled: true
+  - key: userDocumento
+    value: ""
+    enabled: true
+  - key: userId
+    value: ""
+    enabled: true
+  - key: userNome
+    value: ""
+    enabled: true
+  - key: userSenha
+    value: ""
+    enabled: true
+  - key: userSobrenome
+    value: ""
+    enabled: true
+  - key: vehicleId
     value: ""
     enabled: true
 color: null

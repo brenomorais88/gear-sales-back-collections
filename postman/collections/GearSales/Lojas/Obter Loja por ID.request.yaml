@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{baseUrl}}/lojas/9e083cd2-0f82-4f84-b110-d86f801663bd"
+url: "{{baseUrl}}/lojas/{{lojaId}}"
 method: GET
 headers:
   Authorization: Bearer {{accessToken}}

@@ -1,9 +1,9 @@
 $kind: http-request
 description: |-
   Generated from cURL: curl --request POST \
-    --url http://localhost:8080/auth/logout \
+    --url {{baseUrl}}/auth/logout \
     --header 'Accept: application/json' \
-    --cookie "access=SEU_ACCESS_TOKEN_ATUAL"
+    --cookie "access={{accessToken}}"
 url: "{{baseUrl}}/auth/logout"
 method: POST
 headers:

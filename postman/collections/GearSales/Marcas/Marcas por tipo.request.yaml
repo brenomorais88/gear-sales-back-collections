@@ -1,7 +1,7 @@
 $kind: http-request
 description: |
-  Generated from cURL: curl -X GET "http://localhost:8080/marcas?tipo=CARRO"
-url: http://localhost:8080/marcas?tipo=CARRO
+  Generated from cURL: curl -X GET "{{baseUrl}}/marcas?tipo=CARRO"
+url: "{{baseUrl}}/marcas?tipo=CARRO"
 method: GET
 queryParams:
   tipo: CARRO

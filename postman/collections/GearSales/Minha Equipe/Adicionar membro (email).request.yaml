@@ -1,9 +1,9 @@
 $kind: http-request
 description: Adiciona um membro usando o email.
-url: "{{baseUrl}}/lojas/{{loja_id}}/equipe"
+url: "{{baseUrl}}/lojas/{{lojaId}}/equipe"
 method: POST
 headers:
-  Authorization: Bearer {{token}}
+  Authorization: Bearer {{accessToken}}
   Content-Type: application/json
 body:
   type: json

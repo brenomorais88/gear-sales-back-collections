@@ -3,7 +3,7 @@ description: >
   Generated from cURL: curl --location
   '{{baseUrl}}/billing/status?lojaId={{lojaId}}' \
 
-  --header 'Authorization: Bearer {{jwtToken}}' \
+  --header 'Authorization: Bearer {{accessToken}}' \
 
   --header 'Content-Type: application/json'
 url: "{{baseUrl}}/billing/status?lojaId={{lojaId}}"

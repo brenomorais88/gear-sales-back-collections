@@ -1,12 +1,12 @@
 $kind: http-request
 description: |
-  Generated from cURL: curl -X PUT http://localhost:8080/cambios/UUID_AQUI \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  Generated from cURL: curl -X PUT {{baseUrl}}/cambios/UUID_AQUI \
+    -H "Authorization: Bearer {{accessToken}}" \
     -H "Content-Type: application/json" \
     -d '{
       "nome": "Manual"
     }'
-url: "{{baseUrl}}combustiveis/UUID_AQUI"
+url: "{{baseUrl}}/combustiveis/UUID_AQUI"
 method: PUT
 headers:
   Authorization: Bearer {{accessToken}}

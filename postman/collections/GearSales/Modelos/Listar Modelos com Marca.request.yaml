@@ -1,8 +1,8 @@
 $kind: http-request
 description: >
   Generated from cURL: curl -X GET
-  "http://localhost:8080/modelos?includeMarca=true"
-url: http://localhost:8080/modelos?includeMarca=true
+  "{{baseUrl}}/modelos?includeMarca=true"
+url: "{{baseUrl}}/modelos?includeMarca=true"
 method: GET
 queryParams:
   includeMarca: "true"

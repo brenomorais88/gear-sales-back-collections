@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{baseUrl}}billing/complete-signup"
+url: "{{baseUrl}}/billing/complete-signup"
 method: POST
 body:
   type: json

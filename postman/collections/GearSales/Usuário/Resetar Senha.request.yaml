@@ -1,12 +1,12 @@
 $kind: http-request
 description: |-
-  Generated from cURL: curl -X POST http://localhost:8080/auth/password/reset \
+  Generated from cURL: curl -X POST {{baseUrl}}/auth/password/reset \
     -H "Content-Type: application/json" \
     -d '{
       "token": "TOKEN_RECEBIDO_NO_EMAIL",
       "newPassword": "NovaSenha123"
   }'
-url: http://localhost:8080/auth/password/reset
+url: "{{baseUrl}}/auth/password/reset"
 method: POST
 headers:
   Content-Type: application/json

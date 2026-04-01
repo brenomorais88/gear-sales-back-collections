@@ -1,6 +1,6 @@
 $kind: http-request
 description: |-
-  Generated from cURL: curl -X POST "http://localhost:8080/lojas/inicial" \
+  Generated from cURL: curl -X POST "{{baseUrl}}/lojas/inicial" \
     -H "Authorization: Bearer SEU_JWT_AQUI" \
     -H "Content-Type: application/json" \
     -d '{
@@ -28,7 +28,7 @@ description: |-
       "logoUrl": "https://cdn.exemplo.com/logo.png",
       "bannerUrl": "https://cdn.exemplo.com/banner.png"
     }'
-url: http://localhost:8080/lojas/inicial
+url: "{{baseUrl}}/lojas/inicial"
 method: POST
 headers:
   Authorization: Bearer SEU_JWT_AQUI

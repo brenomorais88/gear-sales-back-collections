@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}/responsavel"
+url: "{{baseUrl}}/lojas/{{lojaId}}/leads/{{leadId}}/responsavel"
 method: PATCH
 headers:
   Content-Type: application/json
@@ -8,6 +8,6 @@ body:
   type: text
   content: |-
     {
-      "responsavelUserId": "{{USER_ID}}"
+      "responsavelUserId": "{{userId}}"
     }
 order: 3000

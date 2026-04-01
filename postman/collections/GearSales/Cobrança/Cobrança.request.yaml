@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{baseUrl}}billing/checkout"
+url: "{{baseUrl}}/billing/checkout"
 method: POST
 body:
   type: json

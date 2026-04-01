@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{baseUrl}}/vendas/{{vendaId}}"
+url: "{{baseUrl}}/vendas/{{saleId}}"
 method: GET
 order: 3000

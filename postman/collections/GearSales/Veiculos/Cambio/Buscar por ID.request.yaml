@@ -1,8 +1,8 @@
 $kind: http-request
 description: |
-  Generated from cURL: curl -X GET http://localhost:8080/cambios/UUID_AQUI \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI"
-url: "{{baseUrl}}cambios/UUID_AQUI"
+  Generated from cURL: curl -X GET {{baseUrl}}/cambios/UUID_AQUI \
+    -H "Authorization: Bearer {{accessToken}}"
+url: "{{baseUrl}}/cambios/UUID_AQUI"
 method: GET
 headers:
   Authorization: Bearer {{accessToken}}

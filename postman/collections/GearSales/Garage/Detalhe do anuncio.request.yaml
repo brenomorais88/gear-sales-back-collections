@@ -1,10 +1,10 @@
 $kind: http-request
-url: http://localhost:8080/lojas/1eefa3f1-cb96-4b26-8db5-9ee691fbfa06/leads/35e760f8-9b9a-4941-990e-e9432f74cce3/notes
+url: "{{baseUrl}}/lojas/{{lojaId}}/leads/{{leadId}}/notes"
 method: POST
 headers:
   Accept: application/json
   Content-Type: application/json
-  Authorization: Bearer SEU_TOKEN_AQUI
+  Authorization: Bearer {{accessToken}}
 body:
   type: json
   content: |-

@@ -1,6 +1,6 @@
 $kind: http-request
 description: Remove o vínculo do membro com a loja.
-url: "{{baseUrl}}/lojas/{{selected_loja_id}}/equipe/{{usuario_id}}"
+url: "{{baseUrl}}/lojas/{{lojaId}}/equipe/{{teamMemberId}}"
 method: DELETE
 headers:
   Authorization: Bearer {{accessToken}}

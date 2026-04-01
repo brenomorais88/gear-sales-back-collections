@@ -1,6 +1,6 @@
 $kind: http-request
 name: GET /categorias/:id (By ID)
-url: "{{baseUrl}}/categorias/{{categoriaId}}"
+url: "{{baseUrl}}/categorias/{{categoryId}}"
 method: GET
 scripts:
   - type: afterResponse
@@ -9,7 +9,7 @@ scripts:
 
       const c = pm.response.json();
 
-      if (pm.environment.get('categoriaId')) { pm.test('id confere', function(){
-      pm.expect(c.id).to.eql(pm.environment.get('categoriaId')); }); }
+      if (pm.environment.get('categoryId')) { pm.test('id confere', function(){
+      pm.expect(c.id).to.eql(pm.environment.get('categoryId')); }); }
     language: text/javascript
 order: 3000

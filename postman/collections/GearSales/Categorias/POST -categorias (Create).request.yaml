@@ -21,6 +21,6 @@ scripts:
 
       pm.expect(c).to.have.property('id');
 
-      pm.environment.set('categoriaId', c.id);
+      pm.environment.set('categoryId', c.id);
     language: text/javascript
 order: 1000

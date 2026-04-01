@@ -1,4 +1,15 @@
 $kind: http-request
-url: ""
-method: GET
+url: "{{baseUrl}}/me"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Accept: application/json
+  Authorization: Bearer {{accessToken}}
+body:
+  type: text
+  content: |-
+    {
+      "nome": "{{userNome}}",
+      "sobrenome": "{{userSobrenome}}"
+    }
 order: 4000

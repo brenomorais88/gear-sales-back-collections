@@ -1,12 +1,12 @@
 $kind: http-request
 description: |-
-  Generated from cURL: curl -X POST http://localhost:8080/modelos \
+  Generated from cURL: curl -X POST {{baseUrl}}/modelos \
     -H "Content-Type: application/json" \
     -d '{
       "nome": "Ka",
-      "marcaId": "00000000-0000-0000-0000-000000000001"
+      "marcaId": "{{brandId}}"
     }'
-url: http://localhost:8080/modelos
+url: "{{baseUrl}}/modelos"
 method: POST
 headers:
   Content-Type: application/json
@@ -15,6 +15,6 @@ body:
   content: |-
     {
         "nome": "Fidsdsdesta",
-        "marcaId": "fd4fe8e3-fa13-4d5d-b173-d61ccb0e1090"
+        "marcaId": "{{brandId}}"
       }
 order: 1000

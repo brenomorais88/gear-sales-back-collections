@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads"
+url: "{{baseUrl}}/lojas/{{lojaId}}/leads"
 method: POST
 headers:
   Content-Type: application/json
@@ -12,9 +12,9 @@ body:
       "telefone": "11999990001",
       "email": "pedro@example.com",
       "origem": "WHATSAPP",
-      "veiculoId": "{{VEICULO_ID}}",
+      "veiculoId": "{{vehicleId}}",
       "veiculoTexto": null,
-      "responsavelUserId": "{{USER_ID}}",
+      "responsavelUserId": "{{userId}}",
       "proximoFollowUpEm": "2026-04-01T14:00:00Z",
       "observacaoInicial": "Primeiro contato pelo WhatsApp"
     }

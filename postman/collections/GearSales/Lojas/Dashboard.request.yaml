@@ -1,26 +1,26 @@
 $kind: http-request
 description: >-
-  Generated from cURL: curl -X POST "http://localhost:8080/api/lojas/dashboard"
+  Generated from cURL: curl -X POST "{{baseUrl}}/api/lojas/dashboard"
   \
     -H "Content-Type: application/json" \
-    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+    -H "Authorization: Bearer {{accessToken}}" \
     -d '{
-      "lojaId": "8c3c6d2b-2b26-4f3b-9f52-66c2a1d9d8d1",
+      "lojaId": "{{lojaId}}",
       "periodo": {
         "startDate": "2026-03-01",
         "endDate": "2026-03-31"
       }
     }'
-url: http://localhost:8080/api/lojas/dashboard
+url: "{{baseUrl}}/api/lojas/dashboard"
 method: POST
 headers:
   Content-Type: application/json
-  Authorization: Bearer SEU_TOKEN_AQUI
+  Authorization: Bearer {{accessToken}}
 body:
   type: json
   content: |-
     {
-        "lojaId": "8c3c6d2b-2b26-4f3b-9f52-66c2a1d9d8d1",
+        "lojaId": "{{lojaId}}",
         "periodo": {
           "startDate": "2026-03-01",
           "endDate": "2026-03-31"

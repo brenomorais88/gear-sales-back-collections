@@ -1,7 +1,7 @@
 $kind: http-request
 description: >
   Generated from cURL: curl -X DELETE
-  http://localhost:8080/modelos/00000000-0000-0000-0000-000000000002
-url: http://localhost:8080/modelos/0c5aaa40-f15c-4d4c-8460-29188c409717
+  {{baseUrl}}/modelos/00000000-0000-0000-0000-000000000002
+url: "{{baseUrl}}/modelos/{{modelId}}"
 method: DELETE
 order: 7000
