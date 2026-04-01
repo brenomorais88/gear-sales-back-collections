@@ -1,90 +1,89 @@
 name: App Serviços - HML
 values:
   - key: accessToken
-    value: ""
+    value: ''
     enabled: true
   - key: anuncioId
-    value: ""
+    value: ''
     enabled: true
   - key: baseUrl
-    value: https://PREENCHER-HML
+    value: 'https://PREENCHER-HML'
     enabled: true
   - key: brandId
-    value: ""
+    value: ''
     enabled: true
   - key: categoryId
-    value: ""
+    value: ''
     enabled: true
   - key: cloudflare_finalUrl
-    value: ""
+    value: ''
     enabled: true
   - key: cloudflare_uploadPath
-    value: ""
+    value: ''
     enabled: true
   - key: cloudflare_uploadUrl
-    value: ""
+    value: ''
     enabled: true
   - key: customerId
-    value: ""
+    value: ''
     enabled: true
   - key: imageId
-    value: ""
+    value: ''
     enabled: true
   - key: leadId
-    value: ""
+    value: ''
     enabled: true
   - key: lojaId
-    value: ""
+    value: ''
     enabled: true
   - key: modelId
-    value: ""
+    value: ''
     enabled: true
   - key: noteId
-    value: ""
+    value: ''
     enabled: true
   - key: opcionalId
-    value: ""
+    value: ''
     enabled: true
   - key: refreshToken
-    value: ""
+    value: ''
     enabled: true
   - key: saleId
-    value: ""
+    value: ''
     enabled: true
   - key: storeId
-    value: ""
+    value: ''
     enabled: true
   - key: stripeSessionId
-    value: ""
+    value: ''
     enabled: true
   - key: subscriptionId
-    value: ""
+    value: ''
     enabled: true
   - key: teamMemberId
-    value: ""
+    value: ''
     enabled: true
   - key: tipoVeiculoId
-    value: ""
+    value: ''
     enabled: true
   - key: userDataNascimento
-    value: ""
+    value: ''
     enabled: true
   - key: userDocumento
-    value: ""
+    value: ''
     enabled: true
   - key: userId
-    value: ""
+    value: ''
     enabled: true
   - key: userNome
-    value: ""
+    value: ''
     enabled: true
   - key: userSenha
-    value: ""
+    value: ''
     enabled: true
   - key: userSobrenome
-    value: ""
+    value: ''
     enabled: true
   - key: vehicleId
-    value: ""
+    value: ''
     enabled: true
-color: null
