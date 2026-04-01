@@ -1,7 +1,7 @@
 name: App Serviços - PROD
 values:
   - key: baseUrl
-    value: http://localhost:8080
+    value: http://api.gearsales.com.br
     enabled: true
   - key: accessToken
     value: ""
