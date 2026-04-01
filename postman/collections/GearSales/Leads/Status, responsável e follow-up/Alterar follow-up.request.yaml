@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}/follow-up"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: text
+  content: |-
+    {
+      "proximoFollowUpEm": "2026-04-15T14:30:00Z"
+    }
+order: 4000

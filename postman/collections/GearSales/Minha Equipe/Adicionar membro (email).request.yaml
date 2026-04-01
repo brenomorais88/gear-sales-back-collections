@@ -1,0 +1,16 @@
+$kind: http-request
+description: Adiciona um membro usando o email.
+url: "{{baseUrl}}/lojas/{{loja_id}}/equipe"
+method: POST
+headers:
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "usuario@email.com",
+      "documento": null,
+      "role": "VENDEDOR"
+    }
+order: 2000

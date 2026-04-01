@@ -1,0 +1,7 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl -X GET
+  http://localhost:8080/modelos/00000000-0000-0000-0000-000000000002
+url: http://localhost:8080/modelos/98850861-8826-43d4-8a5c-1858fb72f889
+method: GET
+order: 5000

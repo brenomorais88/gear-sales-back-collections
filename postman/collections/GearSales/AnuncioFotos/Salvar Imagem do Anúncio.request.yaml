@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/anuncios/{{anuncioId}}/imagens"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+body:
+  type: text
+  content: >
+    {
+      "url": "https://r2.gearsales.dev/anuncios/49cb388d-801a-4f36-91f4-81554d248e69/abc123.jpg",
+      "veiculoId": "d5f389b6-c66f-42c0-8421-c059422e59d6",
+      "ordem": 0,
+      "isCapa": true
+    }
+order: 3000

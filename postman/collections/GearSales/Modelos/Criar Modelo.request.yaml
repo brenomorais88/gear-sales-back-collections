@@ -1,0 +1,20 @@
+$kind: http-request
+description: |-
+  Generated from cURL: curl -X POST http://localhost:8080/modelos \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Ka",
+      "marcaId": "00000000-0000-0000-0000-000000000001"
+    }'
+url: http://localhost:8080/modelos
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Fidsdsdesta",
+        "marcaId": "fd4fe8e3-fa13-4d5d-b173-d61ccb0e1090"
+      }
+order: 1000

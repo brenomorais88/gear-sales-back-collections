@@ -1,0 +1,14 @@
+$kind: http-request
+description: Edita o role de um membro da equipe.
+url: "{{baseUrl}}/lojas/{{loja_id}}/equipe/{{usuario_id}}/role"
+method: PATCH
+headers:
+  Authorization: Bearer {{token}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "role": "MANAGER"
+    }
+order: 4000

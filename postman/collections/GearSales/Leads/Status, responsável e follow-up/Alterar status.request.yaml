@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: text
+  content: |-
+    {
+      "status": "EM_NEGOCIACAO",
+      "perdidoMotivo": null
+    }
+order: 1000

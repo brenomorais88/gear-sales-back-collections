@@ -1,0 +1,21 @@
+$kind: http-request
+description: >-
+  Generated from cURL: curl -X PUT
+  http://localhost:8080/modelos/00000000-0000-0000-0000-000000000002 \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Ka Sedan",
+      "marcaId": "00000000-0000-0000-0000-000000000001"
+    }'
+url: http://localhost:8080/modelos/d43cd446-0d41-4424-b6bb-43d4a8b0c46b
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Fusion",
+        "marcaId": "fd4fe8e3-fa13-4d5d-b173-d61ccb0e1090"
+      }
+order: 6000

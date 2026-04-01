@@ -1,0 +1,7 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl -X DELETE
+  http://localhost:8080/marcas/00000000-0000-0000-0000-000000000001
+url: http://localhost:8080/marcas/00000000-0000-0000-0000-000000000001
+method: DELETE
+order: 6000

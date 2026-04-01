@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/anuncios?status=DISPONIVEL&lojaId=1eefa3f1-cb96-4b26-8db5-9ee\
+  691fbfa06"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  status: DISPONIVEL
+  lojaId: 1eefa3f1-cb96-4b26-8db5-9ee691fbfa06
+order: 3000

@@ -1,0 +1,21 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl -X PUT
+  http://localhost:8080/marcas/00000000-0000-0000-0000-000000000001 \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Ford Atualizada",
+      "tipo": "CARRO"
+    }'
+url: http://localhost:8080/marcas/00000000-0000-0000-0000-000000000001
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Ford Atualizada",
+        "tipo": "CARRO"
+      }
+order: 5000

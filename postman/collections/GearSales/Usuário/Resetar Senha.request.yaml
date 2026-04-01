@@ -1,0 +1,20 @@
+$kind: http-request
+description: |-
+  Generated from cURL: curl -X POST http://localhost:8080/auth/password/reset \
+    -H "Content-Type: application/json" \
+    -d '{
+      "token": "TOKEN_RECEBIDO_NO_EMAIL",
+      "newPassword": "NovaSenha123"
+  }'
+url: http://localhost:8080/auth/password/reset
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "token": "TOKEN_RECEBIDO_NO_EMAIL",
+        "newPassword": "NovaSenha123"
+    }
+order: 3000

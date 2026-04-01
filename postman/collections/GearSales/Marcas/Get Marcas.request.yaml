@@ -1,0 +1,6 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X GET http://localhost:8080/marcas
+url: "{{baseUrl}}marcas"
+method: GET
+order: 2000

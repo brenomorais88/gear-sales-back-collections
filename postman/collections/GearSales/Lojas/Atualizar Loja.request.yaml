@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/lojas/{{lojaId}}"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "nome": "Gear Garage Oficial"
+        "documento": "12345678000101",
+        "endereco": "Av. Principal, 1000 - Centro",
+        "telefone": "(11) 1111-1111",
+        "email": "matriz@gearsales.com.br",
+        "horarioFuncionamento": null
+    }
+order: 4000

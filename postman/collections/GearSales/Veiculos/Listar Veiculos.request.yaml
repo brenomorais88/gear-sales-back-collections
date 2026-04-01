@@ -1,0 +1,6 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl --location 'http://localhost:8080/veiculos'
+url: "{{baseUrl}}/veiculos"
+method: GET
+order: 9000

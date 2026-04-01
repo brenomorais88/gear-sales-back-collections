@@ -1,0 +1,64 @@
+$kind: http-request
+description: |-
+  Generated from cURL: curl -X POST "http://localhost:8080/lojas/inicial" \
+    -H "Authorization: Bearer SEU_JWT_AQUI" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Loja Exemplo",
+      "documento": "12.345.678/0001-95",
+      "telefone": "(11) 99999-9999",
+      "email": "contato@lojaexemplo.com",
+      "horarioFuncionamento": {
+        "segunda": "09:00-18:00",
+        "terca": "09:00-18:00"
+      },
+      "cep": "01001000",
+      "logradouro": "Praca da Se",
+      "numero": "100",
+      "complemento": "Conj 12",
+      "bairro": "Se",
+      "cidade": "Sao Paulo",
+      "estado": "SP",
+      "nomePublico": "Loja Exemplo",
+      "telefonePublico": "(11) 3000-0000",
+      "whatsappPublico": "(11) 98888-7777",
+      "emailPublico": "atendimento@lojaexemplo.com",
+      "textoInstitucional": "Especialistas em seminovos.",
+      "corPrincipal": "#112233",
+      "logoUrl": "https://cdn.exemplo.com/logo.png",
+      "bannerUrl": "https://cdn.exemplo.com/banner.png"
+    }'
+url: http://localhost:8080/lojas/inicial
+method: POST
+headers:
+  Authorization: Bearer SEU_JWT_AQUI
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Loja Exemplo",
+        "documento": "12.345.678/0001-95",
+        "telefone": "(11) 99999-9999",
+        "email": "contato@lojaexemplo.com",
+        "horarioFuncionamento": {
+          "segunda": "09:00-18:00",
+          "terca": "09:00-18:00"
+        },
+        "cep": "01001000",
+        "logradouro": "Praca da Se",
+        "numero": "100",
+        "complemento": "Conj 12",
+        "bairro": "Se",
+        "cidade": "Sao Paulo",
+        "estado": "SP",
+        "nomePublico": "Loja Exemplo",
+        "telefonePublico": "(11) 3000-0000",
+        "whatsappPublico": "(11) 98888-7777",
+        "emailPublico": "atendimento@lojaexemplo.com",
+        "textoInstitucional": "Especialistas em seminovos.",
+        "corPrincipal": "#112233",
+        "logoUrl": "https://cdn.exemplo.com/logo.png",
+        "bannerUrl": "https://cdn.exemplo.com/banner.png"
+      }
+order: 13000

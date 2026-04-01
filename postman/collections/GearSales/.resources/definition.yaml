@@ -1,0 +1,173 @@
+$kind: collection
+description: >-
+  # App Serviços - Backend API (Ktor)
+
+
+  ## Overview
+
+  This is a comprehensive API collection for the App Serviços backend built with
+  Ktor. The API provides endpoints for managing a service marketplace
+  application, including user authentication, vehicle listings, announcements,
+  sales, and store management.
+
+
+  ## Getting Started
+
+
+  ### Authentication
+
+  Most endpoints require authentication using a Bearer token. Follow these
+  steps:
+
+
+  1. **Register**: Use `POST /auth/register` to create a new account
+
+  2. **Login**: Use `POST /auth/login` to obtain an access token
+
+  3. **Use Token**: The access token is automatically saved to the
+  `{{accessToken}}` variable
+
+  4. **Refresh**: Use `POST /auth/refresh` when your token expires
+
+
+  ### Environment Variables
+
+  This collection uses the following variables (configured in the active
+  environment):
+
+
+  - `baseUrl` - Base URL of the API (e.g., http://localhost:8080)
+
+  - `accessToken` - JWT access token for authentication (auto-set after login)
+
+  - `refreshToken` - Token for refreshing expired access tokens
+
+  - `userId` - Current user ID
+
+  - `categoriaId` - Category ID for testing
+
+  - `vendaId` - Sale ID for testing
+
+  - `anuncioId` - Announcement ID for testing
+
+
+  ### Available Environments
+
+  - **App Serviços - Local**: For local development (localhost:8080)
+
+  - **App Serviços - HML**: For homologation/staging environment
+
+
+  ## API Structure
+
+
+  ### 🔐 Autenticação (Authentication)
+
+  Endpoints for user registration, login, token refresh, and logout.
+
+
+  ### 👤 Usuário (User)
+
+  Endpoints for managing user profile and information.
+
+
+  ### 📁 Categorias (Categories)
+
+  CRUD operations for service categories.
+
+
+  ### 🏪 Lojas (Stores)
+
+  Manage stores, including creation, updates, and listings.
+
+
+  ### 🚗 Veículos (Vehicles)
+
+  Complete vehicle management including:
+
+  - Vehicle CRUD operations
+
+  - Brands (Marcas)
+
+  - Models (Modelos)
+
+  - Vehicle types and optional features
+
+
+  ### 📢 Anuncios (Announcements)
+
+  Create and manage service announcements with photo uploads.
+
+
+  ### 📸 AnuncioFotos (Announcement Photos)
+
+  Handle image uploads for announcements using presigned URLs.
+
+
+  ### 💰 Vendas (Sales)
+
+  Track and manage sales transactions.
+
+
+  ## Common Patterns
+
+
+  ### Authorization Header
+
+  Most authenticated endpoints require:
+
+  ```
+
+  Authorization: Bearer {{accessToken}}
+
+  ```
+
+
+  ### Pagination
+
+  List endpoints support pagination with query parameters:
+
+  - `page` - Page number (default: 0)
+
+  - `size` - Items per page (default: 20)
+
+
+  ### Error Responses
+
+  The API returns standard HTTP status codes:
+
+  - `200` - Success
+
+  - `201` - Created
+
+  - `400` - Bad Request
+
+  - `401` - Unauthorized
+
+  - `403` - Forbidden
+
+  - `404` - Not Found
+
+  - `500` - Internal Server Error
+
+
+  ## Image Upload Flow
+
+  1. Generate presigned URL: `POST /anuncios/{id}/imagens/upload-url`
+
+  2. Upload image to Cloudflare R2 using the presigned URL
+
+  3. Confirm upload: `POST /anuncios/{id}/imagens/confirm`
+
+
+  ## Support
+
+  For issues or questions, contact the development team.
+
+
+  ---
+
+  *Coleção completa para testar Autenticação, Usuário (/me) e Categorias.*
+variables:
+  baseUrl: http://localhost:8080
+  categoriaId: ""

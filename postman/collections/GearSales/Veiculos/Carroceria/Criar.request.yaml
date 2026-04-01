@@ -1,0 +1,20 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X POST http://localhost:8080/cambios \
+    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Automático"
+    }'
+url: "{{baseUrl}}carrocerias"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Automático"
+      }
+order: 3000

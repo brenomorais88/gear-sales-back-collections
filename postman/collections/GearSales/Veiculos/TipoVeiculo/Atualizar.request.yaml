@@ -1,0 +1,20 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X PUT http://localhost:8080/cambios/UUID_AQUI \
+    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Manual"
+    }'
+url: "{{baseUrl}}tipos-veiculo/UUID_AQUI"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Manual"
+      }
+order: 4000

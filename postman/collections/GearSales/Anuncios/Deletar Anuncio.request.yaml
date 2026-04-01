@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}anuncios/32cd9876-8b99-4f52-b8b4-8cf323eff9ab"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 6000

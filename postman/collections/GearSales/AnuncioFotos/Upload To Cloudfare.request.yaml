@@ -1,0 +1,12 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X PUT "UPLOAD_URL_AQUI" \
+    -H "Content-Type: image/jpeg" \
+    --data-binary "@./teste.jpg"
+url: "{{cloudflare_uploadUrl}}"
+method: PUT
+body:
+  type: file
+  content:
+    src: teste2.jpeg
+order: 2000

@@ -1,0 +1,51 @@
+name: App Serviços - Local
+values:
+  - key: baseUrl
+    value: http://localhost:8080
+    enabled: true
+  - key: accessToken
+    value: ""
+    enabled: true
+  - key: userId
+    value: ""
+    enabled: true
+  - key: userNome
+    value: Breno
+    enabled: true
+  - key: userSobrenome
+    value: Morais
+    enabled: true
+  - key: userDocumento
+    value: "12345678900"
+    enabled: true
+  - key: userDataNascimento
+    value: 1997-08-12
+    enabled: true
+  - key: userSenha
+    value: S3nh@Forte!
+    enabled: true
+  - key: categoriaId
+    value: ""
+    enabled: true
+  - key: vendaId
+    value: ""
+    enabled: true
+  - key: cloudflare_uploadUrl
+    value: ""
+    enabled: true
+  - key: cloudflare_finalUrl
+    value: ""
+    enabled: true
+  - key: cloudflare_uploadPath
+    value: ""
+    enabled: true
+  - key: refreshToken
+    value: ""
+    enabled: true
+  - key: stripeSessionId
+    value: ""
+    enabled: true
+  - key: selected_loja_id
+    value: ""
+    enabled: true
+color: null

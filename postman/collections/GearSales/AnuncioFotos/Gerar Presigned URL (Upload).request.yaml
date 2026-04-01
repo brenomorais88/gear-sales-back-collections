@@ -1,0 +1,32 @@
+$kind: http-request
+url: "{{baseUrl}}/anuncios/{{anuncioId}}/imagens/upload-url"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+body:
+  type: text
+  content: |-
+    {
+      "fileName": "frente.jpg",
+      "contentType": "image/jpeg"
+    }
+scripts:
+  - type: afterResponse
+    code: |
+      const json = pm.response.json();
+
+      if (!json.uploadUrl || !json.finalUrl || !json.path) {
+        throw new Error("Resposta não contém uploadUrl, finalUrl ou path");
+      }
+
+      // vou usar prefixo 'cloudflare_' só pra ficar claro que é pro R2
+      pm.environment.set("cloudflare_uploadUrl", json.uploadUrl);
+      pm.environment.set("cloudflare_finalUrl", json.finalUrl);
+      pm.environment.set("cloudflare_uploadPath", json.path);
+
+      console.log("cloudflare_uploadUrl:", json.uploadUrl);
+      console.log("cloudflare_finalUrl:", json.finalUrl);
+      console.log("cloudflare_uploadPath:", json.path);
+    language: text/javascript
+order: 1000

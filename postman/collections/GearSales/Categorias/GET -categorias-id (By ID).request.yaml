@@ -1,0 +1,15 @@
+$kind: http-request
+name: GET /categorias/:id (By ID)
+url: "{{baseUrl}}/categorias/{{categoriaId}}"
+method: GET
+scripts:
+  - type: afterResponse
+    code: >-
+      pm.test('200 OK', function(){ pm.response.to.have.status(200); });
+
+      const c = pm.response.json();
+
+      if (pm.environment.get('categoriaId')) { pm.test('id confere', function(){
+      pm.expect(c.id).to.eql(pm.environment.get('categoriaId')); }); }
+    language: text/javascript
+order: 3000

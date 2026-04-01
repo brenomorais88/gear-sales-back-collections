@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/lojas/00000000-0000-0000-0000-000000000000"
+method: PATCH
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nomePublico": null,
+      "telefonePublico": null,
+      "whatsappPublico": null,
+      "emailPublico": null,
+      "logoUrl": null,
+      "bannerUrl": null,
+      "textoInstitucional": null,
+      "corPrincipal": null
+    }
+order: 5000

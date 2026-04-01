@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "Pedro Silva",
+      "telefone": "11999990001",
+      "email": "pedro@example.com",
+      "origem": "WHATSAPP",
+      "veiculoId": "{{VEICULO_ID}}",
+      "veiculoTexto": null,
+      "responsavelUserId": "{{USER_ID}}",
+      "proximoFollowUpEm": "2026-04-01T14:00:00Z",
+      "observacaoInicial": "Primeiro contato pelo WhatsApp"
+    }
+order: 1000

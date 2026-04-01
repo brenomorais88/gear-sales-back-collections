@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}/responsavel"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: text
+  content: |-
+    {
+      "responsavelUserId": "{{USER_ID}}"
+    }
+order: 3000

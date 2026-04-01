@@ -1,0 +1,6 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X GET http://localhost:8080/modelos
+url: "{{baseUrl}}modelos/byMarca/49dbe9f0-6390-4bed-9f40-066de1f50282"
+method: GET
+order: 3000

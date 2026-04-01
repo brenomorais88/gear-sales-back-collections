@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/lojas/9e083cd2-0f82-4f84-b110-d86f801663bd/usuarios"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "usuarioId": "f98aa676-df45-4304-978f-0a357e9fdf37",
+      "role": "VENDEDOR"
+    }
+order: 6000

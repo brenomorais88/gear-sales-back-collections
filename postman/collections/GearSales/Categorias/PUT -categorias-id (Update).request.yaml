@@ -1,0 +1,18 @@
+$kind: http-request
+name: PUT /categorias/:id (Update)
+url: "{{baseUrl}}/categorias/{{categoriaId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "Bebidas & Sucos",
+      "descricao": "Atualizado"
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('200 OK', function(){ pm.response.to.have.status(200); });
+    language: text/javascript
+order: 4000

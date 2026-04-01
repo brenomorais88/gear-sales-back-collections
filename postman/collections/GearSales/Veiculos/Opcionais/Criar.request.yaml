@@ -1,0 +1,22 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X POST http://localhost:8080/opcionais \
+    -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Ar Condicionado",
+      "tipoVeiculoId": "0c8e71d1-93a7-4a88-b8b5-1dfbb3f9b4c2"
+    }'
+url: "{{baseUrl}}opcionais"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Retrovisor fotocromico",
+        "tipoVeiculoId": "b051c6df-f317-4fb0-a78c-d08dce5844b6"
+      }
+order: 5000

@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{baseUrl}}/lojas/00000000-0000-0000-0000-000000000000"
+method: PATCH
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "Gear Cars Matriz",
+      "documento": "12345678000199",
+      "telefone": "1133334444",
+      "email": "contato@gear.com.br",
+      "endereco": "Av Paulista, 1000 - Bela Vista",
+      "horarioFuncionamento": {
+        "segunda": "09:00-18:00",
+        "terca": "09:00-18:00",
+        "quarta": "09:00-18:00",
+        "quinta": "09:00-18:00",
+        "sexta": "09:00-18:00"
+      }
+    }
+order: 3000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/me/lojas"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 9000

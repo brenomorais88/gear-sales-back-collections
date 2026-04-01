@@ -1,0 +1,7 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl --location --request DELETE
+  'http://localhost:8080/veiculos/33333333-3333-3333-3333-333333333333'
+url: http://localhost:8080/veiculos/33333333-3333-3333-3333-333333333333
+method: DELETE
+order: 14000

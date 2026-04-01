@@ -1,0 +1,7 @@
+$kind: http-request
+description: Lista todos os membros da equipe da loja.
+url: "{{baseUrl}}/lojas/{{loja_id}}/equipe"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 1000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}billing/checkout"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "email": "dono@lojinha.com",
+      "cnpj": "12.345.678/0001-90",
+      "storeName": "Loja Teste Gear",
+      "billingPeriod": "mensal"
+    }
+order: 1000

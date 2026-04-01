@@ -1,0 +1,7 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl --location
+  'http://localhost:8080/veiculos/33333333-3333-3333-3333-333333333333'
+url: http://localhost:8080/veiculos/1e382206-c243-49c0-08ff-b5c5f95d89c6
+method: GET
+order: 12000

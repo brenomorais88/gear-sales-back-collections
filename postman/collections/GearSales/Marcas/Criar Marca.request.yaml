@@ -1,0 +1,20 @@
+$kind: http-request
+description: |
+  Generated from cURL: curl -X POST http://localhost:8080/marcas \
+    -H "Content-Type: application/json" \
+    -d '{
+      "nome": "Ford",
+      "tipo": "CARRO"
+    }'
+url: http://localhost:8080/marcas
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "nome": "Fiat",
+        "tipo": "CARRO"
+      }
+order: 1000

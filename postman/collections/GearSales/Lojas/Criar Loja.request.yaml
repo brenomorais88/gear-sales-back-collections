@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{baseUrl}}/lojas"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "Breno Morais LTDA",
+      "documento": "89575746000137",
+      "endereco": "Rua dos Carros, 123 - São Paulo/SP",
+      "telefone": "11999900000",
+      "email": "pinheiros@gearsales.com",
+      "horarioFuncionamento": {
+        "seg": "09-18",
+        "sab": "10-14"
+      }
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{accessToken}}"
+order: 1000

@@ -1,0 +1,37 @@
+$kind: http-request
+name: POST /auth/register
+description: Cria um usuário e retorna o token de acesso.
+url: "{{baseUrl}}/auth/register"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "{{userNome}}",
+      "sobrenome": "{{userSobrenome}}",
+      "documento": "{{userDocumento}}",
+      "dataNascimento": "{{userDataNascimento}}",
+      "senha": "{{userSenha}}"
+    }
+scripts:
+  - type: afterResponse
+    code: >-
+      pm.test('201 Created', function(){ pm.response.to.have.status(201); });
+
+      try {
+        const json = pm.response.json();
+        pm.test('tem access', function(){ pm.expect(json).to.have.property('access'); });
+        const token = json.access;
+        pm.environment.set('accessToken', token);
+        const parts = token.split('.');
+        if (parts.length === 3) {
+          const payload = JSON.parse(pm.utils.atob(parts[1]));
+          if (payload && payload.sub) { pm.environment.set('userId', payload.sub); }
+          if (payload && payload.doc) { pm.environment.set('userDocumento', payload.doc); }
+          if (payload && payload.nome) { pm.environment.set('userNome', payload.nome); }
+        }
+      } catch(e) { console.log('JWT decode fail', e); }
+    language: text/javascript
+order: 1000

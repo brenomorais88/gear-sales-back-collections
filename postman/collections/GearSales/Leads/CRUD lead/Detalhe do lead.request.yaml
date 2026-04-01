@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}"
+method: GET
+headers:
+  Accept: application/json
+order: 2000

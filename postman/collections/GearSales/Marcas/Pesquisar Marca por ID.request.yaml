@@ -1,0 +1,7 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl -X GET
+  http://localhost:8080/marcas/00000000-0000-0000-0000-000000000001
+url: http://localhost:8080/marcas/2c261f41-4780-46dc-a8b6-259981d7c0e1
+method: GET
+order: 4000

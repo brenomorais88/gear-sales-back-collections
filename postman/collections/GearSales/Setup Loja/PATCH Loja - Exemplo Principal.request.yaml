@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/lojas/00000000-0000-0000-0000-000000000000"
+method: PATCH
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nomePublico": "Gear Cars Premium",
+      "telefonePublico": "1133334444",
+      "whatsappPublico": "5511999999999",
+      "emailPublico": "contato@gearcars.com.br",
+      "cidade": "Sao Paulo",
+      "estado": "SP",
+      "textoInstitucional": "Loja especializada em veiculos selecionados.",
+      "corPrincipal": "#0F172A"
+    }
+order: 2000

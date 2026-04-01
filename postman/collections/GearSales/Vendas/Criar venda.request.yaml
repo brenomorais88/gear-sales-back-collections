@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{baseUrl}}/vendas"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "idAnuncio": "1eefa3f1-cb96-4b26-8db5-9ee691fbfa06",
+      "idVendedor": "11bcc75b-627d-44bb-8192-a14c6579cd1b",
+      "valorBruto": "75000.00",
+      "comissao": "5000.00",
+      "dataVenda": "2026-01-26T14:30:00"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 201) {
+        const json = pm.response.json();
+        pm.environment.set('vendaId', json.id);
+      }
+    language: text/javascript
+order: 4000

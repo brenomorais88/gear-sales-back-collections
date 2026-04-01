@@ -1,0 +1,12 @@
+$kind: http-request
+description: |-
+  Generated from cURL: curl --request POST \
+    --url http://localhost:8080/auth/logout \
+    --header 'Accept: application/json' \
+    --cookie "access=SEU_ACCESS_TOKEN_ATUAL"
+url: "{{baseUrl}}/auth/logout"
+method: POST
+headers:
+  Accept: application/json
+  Cookie: access={{accessToken}}
+order: 4000

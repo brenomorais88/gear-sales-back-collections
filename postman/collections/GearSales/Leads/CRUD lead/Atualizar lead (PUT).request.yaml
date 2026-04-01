@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{BASE_URL}}/lojas/{{LOJA_ID}}/leads/{{LEAD_ID}}"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "Pedro Silva Atualizado",
+      "telefone": "11999990001",
+      "email": "pedro.atualizado@example.com",
+      "origem": "INSTAGRAM",
+      "veiculoId": null,
+      "veiculoTexto": "Honda Civic 2020",
+      "responsavelUserId": "{{USER_ID}}",
+      "perdidoMotivo": null
+    }
+order: 3000

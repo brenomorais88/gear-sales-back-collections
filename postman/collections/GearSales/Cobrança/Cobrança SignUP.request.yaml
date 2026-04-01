@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{baseUrl}}billing/complete-signup"
+method: POST
+body:
+  type: json
+  content: |+
+    {
+      "stripeSessionId":{{stripeSessionId}},
+      "nome": "Breno",
+      "sobrenome": "Morais",
+      "dataNascimento": "1997-08-12",
+      "telefone_usuario": "11981787343",
+      "senha": "12345678",
+      "userDocument": "41264237116",
+      "storeName": "",
+      "storeRazaoSocial": "",
+      "telefone_loja": "",
+      "cep": "",
+      "cidade": "",
+      "state": "",
+      "adress_rua": "",
+      "adress_bairro": "",
+      "adress_number": "",
+      "adress_complemento": ""
+    }
+
+order: 2000

@@ -1,0 +1,10 @@
+$kind: http-request
+description: >
+  Generated from cURL: curl --request GET \
+    --url http://localhost:8080/opcionais/veiculo_opcionais/11111111-1111-1111-1111-111111111111 \
+    --header "Authorization: Bearer {{token}}"
+url: "{{baseUrl}}opcionais/veiculo_opcionais/5c63d34f-8caa-713c-ca54-2dfd5038c5d8"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 6000

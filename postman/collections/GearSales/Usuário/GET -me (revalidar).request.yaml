@@ -1,0 +1,9 @@
+$kind: http-request
+name: GET /me (revalidar)
+url: "{{baseUrl}}/me"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{accessToken}}"
+order: 1000

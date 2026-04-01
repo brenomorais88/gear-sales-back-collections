@@ -1,0 +1,26 @@
+$kind: http-request
+name: POST /categorias (Create)
+url: "{{baseUrl}}/categorias"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nome": "Bebidas",
+      "descricao": "Tudo que é líquido"
+    }
+scripts:
+  - type: afterResponse
+    code: >-
+      pm.test('201/200', function(){
+      pm.expect([200,201]).to.include(pm.response.code); });
+
+      const c = pm.response.json();
+
+      pm.expect(c).to.have.property('id');
+
+      pm.environment.set('categoriaId', c.id);
+    language: text/javascript
+order: 1000
